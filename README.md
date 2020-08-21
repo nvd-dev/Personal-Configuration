@@ -84,7 +84,7 @@ https://github.com/romkatv/powerlevel10k
 
 https://www.nerdfonts.com/
 
-### 5. Customize / restore `.zshrc`
+## 5. Customize / restore `.zshrc`
 
 # Extra packages, plug-ins, formulae,...
 
