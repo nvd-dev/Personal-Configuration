@@ -2,15 +2,15 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/khan/.oh-my-zsh"
+export ZSH="/Users/kahn/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+POWERLEVEL9K_MODE="awesome-patched"
 POWERLEVEL9K_MODE="nerdfont-complete"
-ZSH_DISABLE_COMPFIX="true"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -71,19 +71,18 @@ ZSH_DISABLE_COMPFIX="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git 
-	zsh-syntax-highlighting
-	zsh-autosuggestions
-	vscode
-	fasd
-	command-not-found
-	copyfile
-	encode64
-	extract
-	history
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+    extract
+    zsh-z
+    vscode
+    osx
 )
 
 source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -110,51 +109,67 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_PROMPT_ADD_NEWLINE=false
-POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
-POWERLEVEL9K_SHORTEN_DIR_LENGTH=2
-POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
-POWERLEVEL9K_RVM_BACKGROUND="black"
-POWERLEVEL9K_RVM_FOREGROUND="249"
-POWERLEVEL9K_RVM_VISUAL_IDENTIFIER_COLOR="red"
-POWERLEVEL9K_TIME_BACKGROUND="black"
-POWERLEVEL9K_TIME_FOREGROUND="white"
-POWERLEVEL9K_TIME_FORMAT="\UF43A %D{%I:%M  \UF133  %m.%d.%y}"
-POWERLEVEL9K_RVM_BACKGROUND="black"
-POWERLEVEL9K_RVM_FOREGROUND="249"
-POWERLEVEL9K_RVM_VISUAL_IDENTIFIER_COLOR="red"
-POWERLEVEL9K_STATUS_VERBOSE=false
-POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
-POWERLEVEL9K_VCS_CLEAN_BACKGROUND='green'
-POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
-POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='orange'
-POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
-POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
-POWERLEVEL9K_VCS_HIDE_TAGS='false'
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='black'
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='white'
-POWERLEVEL9K_FOLDER_ICON=''
-POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
-POWERLEVEL9K_STATUS_VERBOSE=false
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
-POWERLEVEL9K_VCS_UNTRACKED_ICON='\u25CF'
-POWERLEVEL9K_VCS_UNSTAGED_ICON='\u00b1'
-POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
-POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
-POWERLEVEL9K_VCS_COMMIT_ICON="\uf417"
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f "
-POWERLEVEL9K_CUSTOM_BATTERY_STATUS="prompt_zsh_battery_level"
-POWERLEVEL9K_CUSTOM_BATTERY_STATUS_BACKGROUND='blue'
-POWERLEVEL9K_CUSTOM_BATTERY_STATUS_BACKGROUND='black'
-#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(codetalk context custom_internet_signal  ssh root_indicator dir dir_writable vcs)
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon context custom_internet_signal  ssh root_indicator dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time  status zsh_internet_signal time)
-HIST_STAMPS="dd/mm/yyyy"
-DISABLE_UPDATE_PROMPT=true
-POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='black'
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='purple'
+#alias
+alias ls='lsd'
 
-ZSH_AUTOSUGGEST_CLEAR_WIDGETS=true
-bindkey '^ ' autosuggest-clear
+#setting
+
+#'ls' and 'cd tab completion' colors
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+#VCS
+	POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
+	POWERLEVEL9K_VCS_CLEAN_BACKGROUND='green'
+
+	POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
+	POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='white'
+
+	POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
+	POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='214'
+
+	POWERLEVEL9K_VCS_UNTRACKED_ICON='\u25CF'
+	POWERLEVEL9K_VCS_UNSTAGED_ICON='\u00b1'
+
+	POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
+	POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
+
+	POWERLEVEL9K_VCS_COMMIT_ICON="\uf417"
+	POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
+	POWERLEVEL9K_VCS_HIDE_TAGS='false'
+
+#status
+	POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE='true'
+	POWERLEVEL9K_STATUS_VERBOSE='false'
+
+#time
+	POWERLEVEL9K_TIME_BACKGROUND="black"
+	POWERLEVEL9K_TIME_FOREGROUND="white"
+	POWERLEVEL9K_TIME_FORMAT="\UF43A %D{%I:%M  \UF133  %m.%d.%y}"
+	HIST_STAMPS="dd/mm/yyyy"
+	POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='black'
+	POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='white'
+	POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD='0'
+
+#context
+	POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='black'
+	POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='199'
+
+#dir
+	POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='33'
+	POWERLEVEL9K_SHORTEN_DIR_LENGTH='2'
+	POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
+
+#promt
+	POWERLEVEL9K_FOLDER_ICON=''
+	POWERLEVEL9K_PROMPT_ON_NEWLINE='false'
+	POWERLEVEL9K_PROMPT_ADD_NEWLINE='false'
+	POWERLEVEL9K_RPROMPT_ON_NEWLINE='true'
+	POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
+	POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f"
+	POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status ssh root_indicator dir dir_writable vcs)
+	POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time)
+
+#update
+	DISABLE_UPDATE_PROMPT='false'
+
