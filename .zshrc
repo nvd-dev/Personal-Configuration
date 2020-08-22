@@ -1,8 +1,14 @@
+#Powerlevel10k instant prompt
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/kahn/.oh-my-zsh"
+export ZSH="/home/khan/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -74,10 +80,10 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
-    extract
     zsh-z
+    extract
     vscode
-    osx
+    history
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,6 +117,7 @@ source $ZSH/oh-my-zsh.sh
 
 #alias
 alias ls='lsd'
+alias open='explorer.exe'
 
 #setting
 
@@ -143,31 +150,33 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 	POWERLEVEL9K_STATUS_VERBOSE='false'
 
 #time
-	POWERLEVEL9K_TIME_BACKGROUND="black"
-	POWERLEVEL9K_TIME_FOREGROUND="white"
-	POWERLEVEL9K_TIME_FORMAT="\UF43A %D{%I:%M  \UF133  %m.%d.%y}"
-	HIST_STAMPS="dd/mm/yyyy"
+	#POWERLEVEL9K_TIME_BACKGROUND='black'
+	#POWERLEVEL9K_TIME_FOREGROUND='white'
+	#POWERLEVEL9K_TIME_FORMAT="\UF43A %D{%I:%M  \UF133  %m.%d.%y}"
+	#HIST_STAMPS="dd/mm/yyyy"
 	POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='black'
 	POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='white'
 	POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD='0'
 
+
 #context
-	POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='black'
-	POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='199'
+	#POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='black'
+	#POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='199'
 
 #dir
-	POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='33'
+	POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='024'
+	POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='000'
 	POWERLEVEL9K_SHORTEN_DIR_LENGTH='2'
 	POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
 
 #promt
-	POWERLEVEL9K_FOLDER_ICON=''
+	POWERLEVEL9K_FOLDER_ICON='\uf07c'
+	POWERLEVEL9K_PROMPT_ADD_NEWLINE='true'
 	POWERLEVEL9K_PROMPT_ON_NEWLINE='false'
-	POWERLEVEL9K_PROMPT_ADD_NEWLINE='false'
 	POWERLEVEL9K_RPROMPT_ON_NEWLINE='true'
 	POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
 	POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f"
-	POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status ssh root_indicator dir dir_writable vcs)
+	POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon  status ssh root_indicator dir dir_writable vcs)
 	POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time)
 
 #update
