@@ -15,8 +15,7 @@ export ZSH="/home/khan/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-POWERLEVEL9K_MODE="awesome-patched"
-POWERLEVEL9K_MODE="nerdfont-complete"
+POWERLEVEL9K_MODE='nerdfont-complete'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -118,6 +117,8 @@ source $ZSH/oh-my-zsh.sh
 #alias
 alias ls='lsd'
 alias open='explorer.exe'
+#alias xx='clear'
+#alias sd='sudo'
 
 #setting
 
@@ -133,7 +134,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 	POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='white'
 
 	POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
-	POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='214'
+	POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='208'
 
 	POWERLEVEL9K_VCS_UNTRACKED_ICON='\u25CF'
 	POWERLEVEL9K_VCS_UNSTAGED_ICON='\u00b1'
@@ -141,8 +142,9 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 	POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
 	POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
 
-	POWERLEVEL9K_VCS_COMMIT_ICON="\uf417"
+	POWERLEVEL9K_VCS_COMMIT_ICON='\uf417'
 	POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
+	POWERLEVEL9K_VCS_BRANCH_ICON='\ue0a0'
 	POWERLEVEL9K_VCS_HIDE_TAGS='false'
 
 #status
@@ -164,20 +166,25 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 	#POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='199'
 
 #dir
-	POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='024'
-	POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='000'
+	POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='025'
+	POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='black'
 	POWERLEVEL9K_SHORTEN_DIR_LENGTH='2'
 	POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
 
+#status
+	POWERLEVEL9K_STATUS_OK_ICON='\uf7d0'
+	POWERLEVEL9K_STATUS_FAIL_ICON='\uf7d3'
+
 #promt
 	POWERLEVEL9K_FOLDER_ICON='\uf07c'
-	POWERLEVEL9K_PROMPT_ADD_NEWLINE='true'
-	POWERLEVEL9K_PROMPT_ON_NEWLINE='false'
-	POWERLEVEL9K_RPROMPT_ON_NEWLINE='true'
-	POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
-	POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f"
-	POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon  status ssh root_indicator dir dir_writable vcs)
-	POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time)
+	#POWERLEVEL9K_PROMPT_ADD_NEWLINE='false'
+	#POWERLEVEL9K_PROMPT_ON_NEWLINE='false'
+	#POWERLEVEL9K_RPROMPT_ON_NEWLINE='false'
+	#POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
+	#POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f"
+	POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status ssh root_indicator dir dir_writable vcs)
+	#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time)
+	POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 #update
 	DISABLE_UPDATE_PROMPT='false'
