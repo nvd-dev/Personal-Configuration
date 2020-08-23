@@ -42,7 +42,6 @@
             "startingDirectory": "%USERPROFILE%",
             "useAcrylic": true,
             "acrylicOpacity": 0.5,
-            "backgroundImage": "",
             "experimental.retroTerminalEffect": true
         },
         "list":

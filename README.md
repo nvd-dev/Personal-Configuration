@@ -137,4 +137,16 @@ https://github.com/kl14n/Personal-Configuration-Backup
 
         for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 
-2. Extravagent mode
+## Extravagent mode
+
+### Set up
+put this in the `defaults` profiles in Windows Terminal `Settings.json`
+
+        "useAcrylic": true,
+        "acrylicOpacity": 0.5,
+        "backgroundImage": "<path to imange",
+        "backgroundImageOpacity": 0.2,
+        "experimental.retroTerminalEffect": true
+
+### Result
+![](Pics/result.png)
