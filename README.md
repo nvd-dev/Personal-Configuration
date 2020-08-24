@@ -1,10 +1,12 @@
 # Settings
 
 Created: Aug 21, 2020 12:33 PM
+Include Wallpapers and pre-configured files
 
-# Fresh Windows 10 Install
+# Windows 10
 
 ## Install Microsoft WSL 2 + Linux Distribution
+    https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
 ## Install Windows Terminal
 
@@ -73,6 +75,12 @@ example:
 5. Gomplayer plus
 6. TeraCopy
 
+# MacOS
+## Installing Iterm2
+MacOS's intergrated terminal works just fine, but iTerms2 has more customization options
+
+    https://www.iterm2.com/downloads.html
+
 # Configuring Terminal
 
 ## 1. Install ZSH
@@ -81,11 +89,13 @@ example:
 
     sudo apt-get install zsh   
 
-set your ZSH as default shell:
+- set your ZSH as default shell:
 
-    chsh -s $(which zsh)
+        chsh -s $(which zsh)
 
 ### MacOS
+
+Skip this step if you are on MacOS Catalina and above
 
     brew install zsh
 
@@ -103,23 +113,24 @@ https://ohmyz.sh/#install
 
 - zsh-syntax-highlighting
 
-        git clone [https://github.com/zsh-users/zsh-syntax-highlighting.git](https://github.com/zsh-users/zsh-syntax-highlighting.git) $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+        git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
 - zsh-z
 
-        git clone [https://github.com/agkozak/zsh-z](https://github.com/agkozak/zsh-z) $ZSH_CUSTOM/plugins/zsh-z
+        git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
 ## 3. Install Powerlevel10k
 
 https://github.com/romkatv/powerlevel10k
 
-    git clone --depth=1 [https://github.com/romkatv/powerlevel10k.git](https://github.com/romkatv/powerlevel10k.git) ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-## 4. Install Nerd fonts
+## 4. Install Nerd Fonts
 
 https://www.nerdfonts.com/
+For best support and less bugs please consider using:
 
-    Hack Nerd Font & SauceCodePro Nerd Font
+    Hack Nerd Font || SauceCodePro Nerd Font
 
 ## 5. Customize / clone `.zshrc` from this GitHub repo
 https://github.com/kl14n/Personal-Configuration-Backup
@@ -128,7 +139,7 @@ https://github.com/kl14n/Personal-Configuration-Backup
 ## Packages, plug-ins, formulae,...
 
 - python3
-- lsd
+- lsd: supercharged lscolor
 - neovim
 - Node
 
@@ -137,7 +148,18 @@ https://github.com/kl14n/Personal-Configuration-Backup
 
         for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
 
-## Extravagent mode
+2. You can time your shell's start up time with
+        
+        for i in $(seq 1 15); do /usr/bin/time $SHELL -i -c exit; done
+
+    ![](Pics/startUpTime.png)
+
+## Extravagent mode (optional)
+
+just for fun:
+
+1. add background image
+2. retro effects on Windows Terminal
 
 ### Set up
 put this in the `defaults` profiles in Windows Terminal `Settings.json`
@@ -148,5 +170,9 @@ put this in the `defaults` profiles in Windows Terminal `Settings.json`
         "backgroundImageOpacity": 0.2,
         "experimental.retroTerminalEffect": true
 
-### Result
-![](Pics/result.png)
+## Results
+### Windows
+![Windows Terminal](Pics/result.png)
+### Macbook
+![MacOS iTerm2](Pics/mac.png)
+
