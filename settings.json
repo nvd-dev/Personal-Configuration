@@ -31,18 +31,18 @@
             "colorScheme": "Monokai Seti Dark",
             "closeOnExit": "graceful",
             "cursorShape":"filledBox",
-            "cursorColor":"#F4005F",
-            "fontFace": "Hack Nerd Font",
-            "fontSize": 12,
-            "fontWeight": "bold",
+            "cursorColor":"#FA8419",
+            "fontFace": "SauceCodePro Nerd Font",
+            "fontSize": 11,
+            "fontWeight": "semi-bold",
             "historySize": 9001,
             "padding": "8, 8, 8, 8",
             "antialiasingMode": "grayscale",
             "snapOnInput": true,
             "startingDirectory": "%USERPROFILE%",
             "useAcrylic": true,
-            "acrylicOpacity": 0.5,
-            "experimental.retroTerminalEffect": true
+            "acrylicOpacity": 0.7,
+            "experimental.retroTerminalEffect": false
         },
         "list":
         [

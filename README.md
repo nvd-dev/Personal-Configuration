@@ -1,4 +1,4 @@
-# Settings
+# Overview
 
 Created: Aug 21, 2020 12:33 PM
 Include Wallpapers and pre-configured files
@@ -43,28 +43,7 @@ recommended: 'Monokai Seti Dark'
             "brightYellow": "#FA8419"
         }
 
-example:
-
-        "defaults":
-        {
-            // Put settings here that you want to apply to all profiles.
-            "colorScheme": "Monokai Seti Dark",
-            "closeOnExit": "graceful",
-            "cursorShape":"filledBox",
-            "cursorColor":"#F4005F",
-            "fontFace": "Hack Nerd Font",
-            "fontSize": 12,
-            "fontWeight": "bold",
-            "historySize": 9001,
-            "padding": "8, 8, 8, 8",
-            "antialiasingMode": "grayscale",
-            "snapOnInput": true,
-            "startingDirectory": "%USERPROFILE%",
-            "useAcrylic": true,
-            "acrylicOpacity": 0.5,
-            "backgroundImage": "",
-            "experimental.retroTerminalEffect": true
-        },
+> `settings.json`
 
 ### Install essential programs:
 

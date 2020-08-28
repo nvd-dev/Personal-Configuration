@@ -5,7 +5,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-#PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
+# export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
 
 # Path to your oh-my-zsh installation.
 #Mac: export ZSH="/Users/khan/.oh-my-zsh"
