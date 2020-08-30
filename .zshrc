@@ -5,6 +5,7 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 # export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
 
 # Path to your oh-my-zsh installation.
@@ -117,7 +118,8 @@ source $ZSH/oh-my-zsh.sh
 
 #alias
 alias ls='lsd'
-#alias open='explorer.exe'
+#alias startbench='for i in $(seq 1 15); do /usr/bin/time $SHELL -i -c exit; done'
+#alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 #alias xx='clear'
 #alias sd='sudo'
 
