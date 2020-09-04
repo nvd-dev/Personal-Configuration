@@ -118,10 +118,10 @@ source $ZSH/oh-my-zsh.sh
 
 #alias
 alias ls='lsd'
-#alias startbench='for i in $(seq 1 15); do /usr/bin/time $SHELL -i -c exit; done'
-#alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 #alias xx='clear'
 #alias sd='sudo'
+#alias startbench='for i in $(seq 1 15); do /usr/bin/time $SHELL -i -c exit; done'
+#alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 
 #setting
 
@@ -175,7 +175,8 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 	POWERLEVEL9K_SHORTEN_STRATEGY='truncate_beginning'
 
 #status
-	POWERLEVEL9K_STATUS_OK_ICON='\uf7d0' #heart icons, deletes these lines for default setting
+	#heart icons, deletes these lines for default setting
+	POWERLEVEL9K_STATUS_OK_ICON='\uf7d0' 
 	POWERLEVEL9K_STATUS_FAIL_ICON='\uf7d3'
 
 #promt
