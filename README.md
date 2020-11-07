@@ -41,6 +41,27 @@ recommended: 'Monokai Seti Dark'
             "brightWhite": "#f6f6ef",
             "yellow": "#FA8419",
             "brightYellow": "#FA8419"
+        },
+        {
+            "name": "bento",
+            "foreground": "#fffaf8",
+            "background": "#2d394d",
+            "black": "#2d394d",
+            "brightBlack": "#5b7c8d",
+            "blue": "#4a768d",
+            "brightBlue": "#5b7c8d",
+            "cyan": "#58D1EB",
+            "brightCyan": "#58D1EB",
+            "green": "#98F424",
+            "brightGreen": "#98F424",
+            "purple": "#ee2a3a",
+            "brightPurple": "#ff7a90",
+            "red": "#ee2a3a",
+            "brightRed": "#ff7a90",
+            "white": "#fffaf8",
+            "brightWhite": "#fffaf8",
+            "yellow": "#FA8419",
+            "brightYellow": "#FA8419"
         }
 
 > `settings.json`
