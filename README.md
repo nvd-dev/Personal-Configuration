@@ -119,6 +119,10 @@ https://ohmyz.sh/#install
 
         git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
+- zsh-nvm install nvm as a zsh plugin. Install zsh-nvm and run nvm upgrade to upgrade.
+
+        git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
+        
 ## 3. Install Powerlevel10k
 
 https://github.com/romkatv/powerlevel10k
@@ -169,10 +173,9 @@ https://github.com/kl14n/Personal-Configuration-Backup
 ### Packages, plug-ins, formulae,...
 
 - homebrew / linuxbrew
-- python3
-- lsd: supercharged lscolor
+- python
+- lsd: https://github.com/Peltoche/lsd
 - neovim
-- Node
 
 # Trivial
 1. To see how different colors look in your terminal, run the following command:
@@ -185,10 +188,9 @@ https://github.com/kl14n/Personal-Configuration-Backup
 
     ![](Pics/startUpTime.png)
 
-## Extravagent mode (optional)
+## Extravagent mode
 
 just for fun:
-
 1. add background image
 2. retro effects on Windows Terminal
 
@@ -197,13 +199,6 @@ put this in the `defaults` profiles in Windows Terminal `Settings.json`
 
         "useAcrylic": true,
         "acrylicOpacity": 0.5,
-        "backgroundImage": "<path to imange",
+        "backgroundImage": "<path to imange>",
         "backgroundImageOpacity": 0.2,
         "experimental.retroTerminalEffect": true
-
-## Results
-### Windows
-![Windows Terminal](Pics/result.png)
-### Macbook
-![MacOS iTerm2](Pics/mac.png)
-

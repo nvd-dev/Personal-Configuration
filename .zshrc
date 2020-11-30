@@ -1,22 +1,25 @@
-#Powerlevel10k instant prompt (see p10k ducumentations)
+#enable this and use 'zprof' to bench your prompt
+#zmodload zsh/zprof
+# The default dumped file is ~/.zcompdump which can be changed with compinit -d new_dump_file or totally disabled with compinit -D
+
+#Powerlevel10k instant prompt
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
-# export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export PATH="/home/linuxbrew/.linuxbrew/sbin:$PATH"
 
 # Path to your oh-my-zsh installation.
-#Mac: export ZSH="/Users/khan/.oh-my-zsh"
 export ZSH="/home/khan/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME='powerlevel10k/powerlevel10k'
+ZSH_THEME="powerlevel10k/powerlevel10k"
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 # Set list of themes to pick from when loading at random
@@ -78,6 +81,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+	zsh-nvm
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -118,16 +122,22 @@ source $ZSH/oh-my-zsh.sh
 
 #alias
 alias ls='lsd'
-#alias xx='clear'
+alias open='explorer.exe'
+alias xx='clear'
 #alias sd='sudo'
-#alias startbench='for i in $(seq 1 15); do /usr/bin/time $SHELL -i -c exit; done'
+alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
 #alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
+
 
 #setting
 
 #'ls' and 'cd tab completion' colors
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
+#ZSH-NVM
+export NVM_LAZY_LOAD=true
+export NVM_COMPLETION=true
 
 #VCS
 	POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
@@ -172,24 +182,23 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 	POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='blue'
 	POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='black'
 	POWERLEVEL9K_SHORTEN_DIR_LENGTH='2'
-	POWERLEVEL9K_SHORTEN_STRATEGY='truncate_beginning'
+	POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
 
 #status
-	#heart icons, deletes these lines for default setting
-	POWERLEVEL9K_STATUS_OK_ICON='\uf7d0' 
+	POWERLEVEL9K_STATUS_OK_ICON='\uf7d0'
 	POWERLEVEL9K_STATUS_FAIL_ICON='\uf7d3'
 
 #promt
+	POWERLEVEL9K_FOLDER_ICON='\uf07c'
 	#POWERLEVEL9K_PROMPT_ADD_NEWLINE='false'
 	#POWERLEVEL9K_PROMPT_ON_NEWLINE='false'
 	#POWERLEVEL9K_RPROMPT_ON_NEWLINE='false'
 	#POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
 	#POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f"
-	POWERLEVEL9K_FOLDER_ICON='\uf07c'
 	POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status ssh root_indicator dir dir_writable vcs)
-	POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 	#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time)
+	POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
-#update
+#other settings
 	DISABLE_UPDATE_PROMPT='false'
-
+	#DISABLE_AUTO_TITLE='true'
