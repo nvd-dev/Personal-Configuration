@@ -119,7 +119,9 @@ https://ohmyz.sh/#install
 
         git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
-- zsh-nvm install nvm as a zsh plugin. Install zsh-nvm and run nvm upgrade to upgrade.
+- zsh-nvm 
+
+    Install nvm as a zsh plugin. Install zsh-nvm and run `nvm upgrade` to upgrade.
 
         git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
         
