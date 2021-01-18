@@ -15,11 +15,29 @@ install Windows Terminal on Microsoft Store
 More details:
     https://github.com/microsoft/terminal
 
-### Themes 
+### Themes & settings
 
 https://allthings.how/windows-terminal-themes-light-dark-colorful/
 
-recommended: 'Monokai Seti Dark'
+
+            // Put settings here that you want to apply to all profiles.
+            "colorScheme": "matrix-01",
+            "closeOnExit": "graceful",
+            "cursorShape":"filledBox",
+            "cursorColor":"#ddc49a",
+            "fontFace": "SauceCodePro Nerd Font",
+            "fontSize": 11,
+            "fontWeight": "semi-bold",
+            "historySize": 9001,
+            "padding": "8, 8, 8, 8",
+            "antialiasingMode": "grayscale",
+            "snapOnInput": true,
+            "startingDirectory": "%USERPROFILE%",
+            "useAcrylic": true,
+            "acrylicOpacity": 0.9,
+            "experimental.retroTerminalEffect": false
+
+recommended: 'matrix-01'
 
         {    
             "name": "Monokai Seti Dark",
@@ -62,7 +80,28 @@ recommended: 'Monokai Seti Dark'
             "brightWhite": "#fffaf8",
             "yellow": "#FA8419",
             "brightYellow": "#FA8419"
-        }
+        },
+        {
+            "name": "matrix-01",
+            "foreground": "#ddc49a", // RAL 1014
+            "background": "#191e28", // RAL 5004
+            "black": "#ddc49a", // RAL 1014
+            "brightBlack": "#808076", // RAL 7023
+            "blue": "#314f6f", // RAL 5000
+            "brightBlue": "#1f3855", // RAL 5003
+            "cyan": "#058b8c", // RAL 5018
+            "brightCyan": "#0f4c64", // RAL 5001
+            "green": "#61993b", // RAL 6018
+            "brightGreen": "#3c7460",  // RAL 6000
+            "purple": "#651e38", // RAL 4004
+            "brightPurple": "#8d3c4b", // RAL 4002
+            "red": "#ab273c", // RAL 3027
+            "brightRed": "#c73f4a", // RAL 3018
+            "white": "#c8cbc4", // RAL 9018
+            "brightWhite": "#e9e0d2", // RAL 9001 
+            "yellow": "#da6e00", // RAL 2000
+            "brightYellow": "#ffb200" //RAL 2007
+        } 
 
 > `settings.json`
 
