@@ -19,24 +19,6 @@ More details:
 
 https://allthings.how/windows-terminal-themes-light-dark-colorful/
 
-
-            // Put settings here that you want to apply to all profiles.
-            "colorScheme": "matrix-01",
-            "closeOnExit": "graceful",
-            "cursorShape":"filledBox",
-            "cursorColor":"#ddc49a",
-            "fontFace": "SauceCodePro Nerd Font",
-            "fontSize": 11,
-            "fontWeight": "semi-bold",
-            "historySize": 9001,
-            "padding": "8, 8, 8, 8",
-            "antialiasingMode": "grayscale",
-            "snapOnInput": true,
-            "startingDirectory": "%USERPROFILE%",
-            "useAcrylic": true,
-            "acrylicOpacity": 0.9,
-            "experimental.retroTerminalEffect": false
-
 recommended: 'matrix-01'
 
         {    
@@ -97,8 +79,8 @@ recommended: 'matrix-01'
             "brightPurple": "#8d3c4b", // RAL 4002
             "red": "#ab273c", // RAL 3027
             "brightRed": "#c73f4a", // RAL 3018
-            "white": "#c8cbc4", // RAL 9018
-            "brightWhite": "#e9e0d2", // RAL 9001 
+            "white": "#f1ece1", // RAL 9010
+            "brightWhite": "#ecece7", // RAL 9003
             "yellow": "#da6e00", // RAL 2000
             "brightYellow": "#ffb200" //RAL 2007
         } 

@@ -28,10 +28,10 @@
         "defaults":
         {
             // Put settings here that you want to apply to all profiles.
-            "colorScheme": "Monokai Seti Dark",
+            "colorScheme": "matrix-01",
             "closeOnExit": "graceful",
             "cursorShape":"filledBox",
-            "cursorColor":"#FA8419",
+            "cursorColor":"#ddc49a",
             "fontFace": "SauceCodePro Nerd Font",
             "fontSize": 11,
             "fontWeight": "semi-bold",
@@ -41,7 +41,7 @@
             "snapOnInput": true,
             "startingDirectory": "%USERPROFILE%",
             "useAcrylic": true,
-            "acrylicOpacity": 0.7,
+            "acrylicOpacity": 0.9,
             "experimental.retroTerminalEffect": false
         },
         "list":
@@ -83,7 +83,7 @@
             "foreground": "#F8F8F2",
             "background": "#151718",
             "black": "#151718",
-            "brightBlack": "#625e4c",
+            "brightBlack": "#77777e",
             "blue": "#9D65FF",
             "brightBlue": "#9D65FF",
             "cyan": "#58D1EB",
@@ -98,8 +98,50 @@
             "brightWhite": "#f6f6ef",
             "yellow": "#FA8419",
             "brightYellow": "#FA8419"
-        }
-    ],
+        },
+        {
+            "name": "bento",
+            "foreground": "#fffaf8",
+            "background": "#2d394d",
+            "black": "#2d394d",
+            "brightBlack": "#77777e",
+            "blue": "#4a768d",
+            "brightBlue": "#5b7c8d",
+            "cyan": "#58D1EB",
+            "brightCyan": "#58D1EB",
+            "green": "#98F424",
+            "brightGreen": "#98F424",
+            "purple": "#ee2a3a",
+            "brightPurple": "#ff7a90",
+            "red": "#ee2a3a",
+            "brightRed": "#ff7a90",
+            "white": "#fffaf8",
+            "brightWhite": "#fffaf8",
+            "yellow": "#FA8419",
+            "brightYellow": "#FA8419"
+        },
+        {
+            "name": "matrix-01",
+            "foreground": "#ddc49a", // RAL 1014
+            "background": "#191e28", // RAL 5004
+            "black": "#ddc49a", // RAL 1014
+            "brightBlack": "#808076", // RAL 7023
+            "blue": "#314f6f", // RAL 5000
+            "brightBlue": "#1f3855", // RAL 5003
+            "cyan": "#058b8c", // RAL 5018
+            "brightCyan": "#0f4c64", // RAL 5001
+            "green": "#61993b", // RAL 6018
+            "brightGreen": "#3c7460",  // RAL 6000
+            "purple": "#651e38", // RAL 4004
+            "brightPurple": "#8d3c4b", // RAL 4002
+            "red": "#ab273c", // RAL 3027
+            "brightRed": "#c73f4a", // RAL 3018
+            "white": "#f1ece1", // RAL 9010
+            "brightWhite": "#ecece7", // RAL 9003
+            "yellow": "#da6e00", // RAL 2000
+            "brightYellow": "#ffb200" //RAL 2007
+        } 
+    ], 
 
     // Add custom keybindings to this array.
     // To unbind a key combination from your defaults.json, set the command to "unbound".
