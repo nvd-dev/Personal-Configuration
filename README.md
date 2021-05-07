@@ -87,6 +87,29 @@ recommended: 'matrix-01'
 
 > `settings.json`
 
+## VScode settings
+
+    "workbench.colorCustomizations": {
+        "terminal.foreground": "#ddc49a",
+        "terminal.background": "#191e28",
+        "terminal.ansiBlack": "#ddc49a",
+        "terminal.ansiBrightBlack": "#808076",
+        "terminal.ansiBlue": "#314f6f",
+        "terminal.ansiBrightBlue": "#1f3855",
+        "terminal.ansiCyan": "#058b8c",
+        "terminal.ansiBrightCyan": "#0f4c64",
+        "terminal.ansiGreen": "#61993b",
+        "terminal.ansiBrightGreen": "#3c7460",
+        "terminal.ansiMagenta": "#651e38",
+        "terminal.ansiBrightMagenta": "#8d3c4b",
+        "terminal.ansiRed": "#ab273c",
+        "terminal.ansiBrightRed": "#c73f4a",
+        "terminal.ansiWhite": "#f1ece1",
+        "terminal.ansiBrightWhite": "#ecece7",
+        "terminal.ansiYellow": "#da6e00",
+        "terminal.ansiBrightYellow": "#ffb200"
+    }
+
 ### Install essential programs:
 
 1. VS Code
@@ -186,7 +209,7 @@ https://github.com/kl14n/Personal-Configuration-Backup
 
 - When you type `nvim` it should work
 
-    - Bonus: add this to ~/.bashrc/~/.zshrc etc to create an alias in case you accidentally type vi (I always type it by mistake): alias vi=nvim
+    - Bonus: add this to ~/.zshrc etc to create an alias in case you accidentally type vi (I always type it by mistake): alias vi=nvim
 
     - Bonus: Also in your bashrc/zshrc etc set your EDITOR env var so various programs know what editor you prefer to use: EDITOR=/usr/local/bin/nvim
 
