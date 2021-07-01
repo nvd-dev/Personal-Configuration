@@ -180,7 +180,7 @@ https://github.com/romkatv/powerlevel10k
 https://www.nerdfonts.com/
 For best support and less bugs please consider using:
 
-    Hack Nerd Font || SauceCodePro Nerd Font
+    VictorMono Nerd Font
 
 ## 5. Customize / clone `.zshrc` from this GitHub repo
 https://github.com/kl14n/Personal-Configuration-Backup
