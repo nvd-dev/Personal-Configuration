@@ -89,6 +89,8 @@ recommended: 'matrix-01'
 
 ## VScode settings
 
+This set Matrix-01 theme to Vscode terminal
+
     "workbench.colorCustomizations": {
         "terminal.foreground": "#ddc49a",
         "terminal.background": "#191e28",
@@ -115,9 +117,8 @@ recommended: 'matrix-01'
 1. VS Code
 2. IDM
 3. WinRAR
-4. BitTorrent Web
-5. Gomplayer plus
-6. TeraCopy
+4. PicoTorrent
+5. KMPlayer
 
 # MacOS
 ## Installing Iterm2
@@ -133,7 +134,7 @@ MacOS's intergrated terminal works just fine, but iTerms2 has more customization
 
     sudo apt-get install zsh   
 
-- set your ZSH as default shell:
+- set your ZSH as default shell (Depriciated since it is recommended to set ZSH as default shell automatically by Oh-My-ZSH)
 
         chsh -s $(which zsh)
 
@@ -163,11 +164,11 @@ https://ohmyz.sh/#install
 
         git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
-- zsh-nvm 
+- zsh-nvm (optional)
 
     Install nvm as a zsh plugin. Install zsh-nvm and run `nvm upgrade` to upgrade.
-
-        git clone https://github.com/lukechilds/zsh-nvm.git ~/.zsh-nvm
+        
+        git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
         
 ## 3. Install Powerlevel10k
 
