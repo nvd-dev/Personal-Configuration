@@ -81,7 +81,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	zsh-nvm
+	# zsh-nvm
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
@@ -135,9 +135,9 @@ alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
 export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
-#ZSH-NVM
-export NVM_LAZY_LOAD=true
-export NVM_COMPLETION=true
+# #ZSH-NVM
+# export NVM_LAZY_LOAD=true
+# export NVM_COMPLETION=true
 
 #VCS
 	# POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
@@ -185,8 +185,8 @@ export NVM_COMPLETION=true
 	POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
 
 #status
-	POWERLEVEL9K_STATUS_OK_ICON='\uf7d0'
-	POWERLEVEL9K_STATUS_FAIL_ICON='\uf7d3'
+	# POWERLEVEL9K_STATUS_OK_ICON='\uf7d0'
+	# POWERLEVEL9K_STATUS_FAIL_ICON='\uf7d3'
 
 #promt
 	POWERLEVEL9K_FOLDER_ICON='\uf07c'
