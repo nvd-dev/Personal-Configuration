@@ -20,7 +20,7 @@ export ZSH="/home/khan/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
-POWERLEVEL9K_MODE='nerdfont-complete'
+# POWERLEVEL9K_MODE='nerdfont-complete'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -132,12 +132,12 @@ alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
 #setting
 
 #'ls' and 'cd tab completion' colors
-export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+# export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43'
+# zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
-# #ZSH-NVM
-# export NVM_LAZY_LOAD=true
-# export NVM_COMPLETION=true
+# #zsh-nvm
+# export nvm_lazy_load=true
+# export nvm_completion=true
 
 #VCS
 	# POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
@@ -149,20 +149,20 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 	# POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
 	# POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='208'
 
-	POWERLEVEL9K_VCS_UNTRACKED_ICON='\u25CF'
-	POWERLEVEL9K_VCS_UNSTAGED_ICON='\u00b1'
+	# POWERLEVEL9K_VCS_UNTRACKED_ICON='\u25CF'
+	# POWERLEVEL9K_VCS_UNSTAGED_ICON='\u00b1'
 
-	POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
-	POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
+	# POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
+	# POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
 
-	POWERLEVEL9K_VCS_COMMIT_ICON='\uf417'
-	POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
-	POWERLEVEL9K_VCS_BRANCH_ICON='\ue0a0'
-	POWERLEVEL9K_VCS_HIDE_TAGS='false'
+	# POWERLEVEL9K_VCS_COMMIT_ICON='\uf417'
+	# POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
+	# POWERLEVEL9K_VCS_BRANCH_ICON='\ue0a0'
+	# POWERLEVEL9K_VCS_HIDE_TAGS='false'
 
 #status
-	POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE='true'
-	POWERLEVEL9K_STATUS_VERBOSE='false'
+	# POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE='true'
+	# POWERLEVEL9K_STATUS_VERBOSE='false'
 
 #time
 	#POWERLEVEL9K_TIME_BACKGROUND='black'
@@ -171,7 +171,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 	#HIST_STAMPS="dd/mm/yyyy"
 	# POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='black'
 	# POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='white'
-	POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD='0'
+	# POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD='0'
 
 
 #context
@@ -181,25 +181,28 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 #dir
 	# POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='blue'
 	# POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='black'
-	POWERLEVEL9K_SHORTEN_DIR_LENGTH='2'
-	POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
+	# POWERLEVEL9K_SHORTEN_DIR_LENGTH='2'
+	# POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
 
 #status
 	# POWERLEVEL9K_STATUS_OK_ICON='\uf7d0'
 	# POWERLEVEL9K_STATUS_FAIL_ICON='\uf7d3'
 
 #promt
-	POWERLEVEL9K_FOLDER_ICON='\uf07c'
+	# POWERLEVEL9K_FOLDER_ICON='\uf07c'
 	# POWERLEVEL9K_PROMPT_ADD_NEWLINE='false'
 	# POWERLEVEL9K_PROMPT_ON_NEWLINE='false'
 	# POWERLEVEL9K_RPROMPT_ON_NEWLINE='false'
 	# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
 	# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f"
 	# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status ssh root_indicator dir dir_writable vcs)
-	POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status ssh root_indicator dir dir_writable vcs)
+	# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status ssh root_indicator dir dir_writable vcs)
 	# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time)
-	POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+	# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 #other settings
-	DISABLE_UPDATE_PROMPT='false'
+	# DISABLE_UPDATE_PROMPT='false'
 	# DISABLE_AUTO_TITLE='true'
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
