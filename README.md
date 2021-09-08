@@ -132,7 +132,7 @@ MacOS's intergrated terminal works just fine, but iTerms2 has more customization
 
 ### Ubuntu:
 
-    sudo apt-get install zsh   
+    sudo apt install zsh   
 
 - set your ZSH as default shell (Depriciated since it is recommended to set ZSH as default shell automatically by Oh-My-ZSH)
 
@@ -140,7 +140,7 @@ MacOS's intergrated terminal works just fine, but iTerms2 has more customization
 
 ### MacOS
 
-Skip this step if you are on MacOS Catalina and above
+Skip this step if you are on MacOS Catalina and above.
 
     brew install zsh
 
