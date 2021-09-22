@@ -187,7 +187,15 @@ For best support and less bugs please consider using:
 
     VictorMono Nerd Font
 
-## 5. Customize / clone `.zshrc` from this GitHub repo
+
+## 5. Install lsd
+https://github.com/Peltoche/lsd
+
+Download the latest .deb package from the [release page](https://github.com/Peltoche/lsd/releases) and install it via:
+
+        sudo dpkg -i lsd_0.20.1_amd64.deb # adapt version number and architecture
+
+## 6. Customize / clone `.zshrc` from this GitHub repo
 https://github.com/kl14n/Personal-Configuration-Backup
 
 # Neovim
@@ -223,7 +231,7 @@ https://github.com/kl14n/Personal-Configuration-Backup
 # Extras 
 ### Packages, plug-ins, formulae,...
 
-- lsd: https://github.com/Peltoche/lsd
+
 - python
 - neovim
 <!-- - homebrew / linuxbrew -->
