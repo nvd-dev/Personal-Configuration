@@ -91,8 +91,8 @@ plugins=(
     history
 )
 
-source $ZSH/oh-my-zsh.sh
 # source $ZSH/oh-my-zsh.sh
+source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
@@ -120,13 +120,21 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#alias
-alias ls='lsd'
-alias open='explorer.exe'
-alias xx='clear'
-#alias sd='sudo'
-alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
-#alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
+# alias
+	#lsd
+	alias ls='lsd'
+	alias l='ls -l'
+	alias la='ls -a'
+	alias lla='ls -la'
+	alias lt='ls --tree'
+
+	alias open='explorer.exe'
+	alias xx='clear'
+	
+	# alias sd='sudo'
+
+	alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
+	alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 
 
 #setting
@@ -138,67 +146,6 @@ alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
 # #zsh-nvm
 # export nvm_lazy_load=true
 # export nvm_completion=true
-
-#VCS
-	# POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
-	# POWERLEVEL9K_VCS_CLEAN_BACKGROUND='green'
-
-	# POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
-	# POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='white'
-
-	# POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
-	# POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='208'
-
-	# POWERLEVEL9K_VCS_UNTRACKED_ICON='\u25CF'
-	# POWERLEVEL9K_VCS_UNSTAGED_ICON='\u00b1'
-
-	# POWERLEVEL9K_VCS_INCOMING_CHANGES_ICON='\u2193'
-	# POWERLEVEL9K_VCS_OUTGOING_CHANGES_ICON='\u2191'
-
-	# POWERLEVEL9K_VCS_COMMIT_ICON='\uf417'
-	# POWERLEVEL9K_VCS_GIT_GITHUB_ICON=''
-	# POWERLEVEL9K_VCS_BRANCH_ICON='\ue0a0'
-	# POWERLEVEL9K_VCS_HIDE_TAGS='false'
-
-#status
-	# POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE='true'
-	# POWERLEVEL9K_STATUS_VERBOSE='false'
-
-#time
-	#POWERLEVEL9K_TIME_BACKGROUND='black'
-	#POWERLEVEL9K_TIME_FOREGROUND='white'
-	#POWERLEVEL9K_TIME_FORMAT="\UF43A %D{%I:%M  \UF133  %m.%d.%y}"
-	#HIST_STAMPS="dd/mm/yyyy"
-	# POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='black'
-	# POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='white'
-	# POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD='0'
-
-
-#context
-	# POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='black'
-	# POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='199'
-
-#dir
-	# POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='blue'
-	# POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='black'
-	# POWERLEVEL9K_SHORTEN_DIR_LENGTH='2'
-	# POWERLEVEL9K_SHORTEN_STRATEGY="truncate_beginning"
-
-#status
-	# POWERLEVEL9K_STATUS_OK_ICON='\uf7d0'
-	# POWERLEVEL9K_STATUS_FAIL_ICON='\uf7d3'
-
-#promt
-	# POWERLEVEL9K_FOLDER_ICON='\uf07c'
-	# POWERLEVEL9K_PROMPT_ADD_NEWLINE='false'
-	# POWERLEVEL9K_PROMPT_ON_NEWLINE='false'
-	# POWERLEVEL9K_RPROMPT_ON_NEWLINE='false'
-	# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="%F{blue}\u256D\u2500%f"
-	# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%F{blue}\u2570\uf460%f"
-	# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon status ssh root_indicator dir dir_writable vcs)
-	# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(status ssh root_indicator dir dir_writable vcs)
-	# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(command_execution_time)
-	# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
 
 #other settings
 	# DISABLE_UPDATE_PROMPT='false'

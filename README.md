@@ -116,7 +116,7 @@ This set Matrix-01 theme to Vscode terminal
 
 1. VS Code
 2. IDM
-3. WinRAR
+3. WinRAR (key included)
 4. PicoTorrent
 5. KMPlayer
 
@@ -144,11 +144,11 @@ Skip this step if you are on MacOS Catalina and above.
 
     brew install zsh
 
-## 2. Install Oh-My-ZSH
+## 2. Install Oh-My-ZSH 
 
 https://ohmyz.sh/#install
 
-    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ### Plug-ins
 
@@ -169,6 +169,10 @@ https://ohmyz.sh/#install
     Install nvm as a zsh plugin. Install zsh-nvm and run `nvm upgrade` to upgrade.
         
         git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+
+- git-open (optional)
+
+    https://github.com/paulirish/git-open
         
 ## 3. Install Powerlevel10k
 
@@ -219,10 +223,10 @@ https://github.com/kl14n/Personal-Configuration-Backup
 # Extras 
 ### Packages, plug-ins, formulae,...
 
-- homebrew / linuxbrew
-- python
 - lsd: https://github.com/Peltoche/lsd
+- python
 - neovim
+<!-- - homebrew / linuxbrew -->
 
 # Trivial
 1. To see how different colors look in your terminal, run the following command:
