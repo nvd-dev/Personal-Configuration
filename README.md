@@ -1,12 +1,13 @@
 # Overview
 
-Created: Aug 21, 2020 12:33 PM
-Include Wallpapers and pre-configured files
-
-# Windows 10
+# Windows 11
 
 ## Install Microsoft WSL 2 + Linux Distribution
-    https://docs.microsoft.com/en-us/windows/wsl/install-win10
+https://docs.microsoft.com/en-us/windows/wsl/install
+
+quick start:
+
+    wsl --install
 
 ## Install Windows Terminal
 
@@ -19,7 +20,8 @@ More details:
 
 https://allthings.how/windows-terminal-themes-light-dark-colorful/
 
-recommended: 'matrix-01'
+<details>
+<summary>Click to view some of my favorite themes</summary>
 
         {    
             "name": "Monokai Seti Dark",
@@ -84,6 +86,7 @@ recommended: 'matrix-01'
             "yellow": "#da6e00", // RAL 2000
             "brightYellow": "#ffb200" //RAL 2007
         } 
+</details>
 
 > `settings.json`
 
@@ -91,32 +94,36 @@ recommended: 'matrix-01'
 
 This set Matrix-01 theme to Vscode terminal
 
+<details>   
+<summary>Click to view</summary>
+
     "workbench.colorCustomizations": {
-        "terminal.foreground": "#ddc49a",
-        "terminal.background": "#191e28",
-        "terminal.ansiBlack": "#ddc49a",
-        "terminal.ansiBrightBlack": "#808076",
-        "terminal.ansiBlue": "#314f6f",
-        "terminal.ansiBrightBlue": "#1f3855",
-        "terminal.ansiCyan": "#058b8c",
-        "terminal.ansiBrightCyan": "#0f4c64",
-        "terminal.ansiGreen": "#61993b",
-        "terminal.ansiBrightGreen": "#3c7460",
-        "terminal.ansiMagenta": "#651e38",
-        "terminal.ansiBrightMagenta": "#8d3c4b",
-        "terminal.ansiRed": "#ab273c",
-        "terminal.ansiBrightRed": "#c73f4a",
-        "terminal.ansiWhite": "#f1ece1",
-        "terminal.ansiBrightWhite": "#ecece7",
-        "terminal.ansiYellow": "#da6e00",
-        "terminal.ansiBrightYellow": "#ffb200"
+            "terminal.foreground": "#ddc49a",
+            "terminal.background": "#191e28",
+            "terminal.ansiBlack": "#ddc49a",
+            "terminal.ansiBrightBlack": "#808076",
+            "terminal.ansiBlue": "#314f6f",
+            "terminal.ansiBrightBlue": "#1f3855",
+            "terminal.ansiCyan": "#058b8c",
+            "terminal.ansiBrightCyan": "#0f4c64",
+            "terminal.ansiGreen": "#61993b",
+            "terminal.ansiBrightGreen": "#3c7460",
+            "terminal.ansiMagenta": "#651e38",
+            "terminal.ansiBrightMagenta": "#8d3c4b",
+            "terminal.ansiRed": "#ab273c",
+            "terminal.ansiBrightRed": "#c73f4a",
+            "terminal.ansiWhite": "#f1ece1",
+            "terminal.ansiBrightWhite": "#ecece7",
+            "terminal.ansiYellow": "#da6e00",
+            "terminal.ansiBrightYellow": "#ffb200"
     }
+</details>
 
 ### Install essential programs:
 
 1. VS Code
 2. IDM
-3. WinRAR (key included)
+3. WinRAR 
 4. PicoTorrent
 5. KMPlayer
 

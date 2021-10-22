@@ -50,7 +50,7 @@
         {
             "acrylicOpacity": 0.84999999999999998,
             "antialiasingMode": "grayscale",
-            "bellStyle": "visual",
+            "bellStyle": "window",
             "closeOnExit": "graceful",
             "colorScheme": "Material Ocean",
             "cursorShape": "filledBox",
@@ -59,7 +59,7 @@
             "fontSize": 12,
             "fontWeight": "medium",
             "historySize": 9001,
-            "padding": "8, 8, 8, 8",
+            // "padding": "8, 8, 8, 8",
             "snapOnInput": true,
             "startingDirectory": "%USERPROFILE%",
             "useAcrylic": true,
