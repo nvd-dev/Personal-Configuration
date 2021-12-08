@@ -47,7 +47,7 @@ Quick Start:
 
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
-<li> zsh-z (optional) </li>
+<li> zsh-z </li>
 
     git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 
@@ -79,7 +79,7 @@ Download the latest .deb package from the [release page](https://github.com/Pelt
 
     sudo dpkg -i lsd_0.20.1_amd64.deb # adapt version number and architecture
 
-## <li>Install [ Zoxide ](https://github.com/ajeetdsouza/zoxide)</li>
+## <li>Install [ Zoxide ](https://github.com/ajeetdsouza/zoxide) (optional)</li>
 
     apt install zoxide
 

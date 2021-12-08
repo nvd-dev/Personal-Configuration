@@ -81,7 +81,7 @@ plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zoxide
+    zsh-z
     vscode
 )
 
@@ -135,6 +135,9 @@ source $ZSH/oh-my-zsh.sh
 # export nvm_lazy_load=true
 # export nvm_completion=true
 
+# zsh-z
+	ZSHZ_DATA=~/.cache/.z
+	
 #other settings
 	# DISABLE_UPDATE_PROMPT='false'
 	# DISABLE_AUTO_TITLE='true'
