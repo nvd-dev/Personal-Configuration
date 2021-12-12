@@ -89,8 +89,15 @@ Download the latest .deb package from the [release page](https://github.com/Pelt
 
 # Neovim
 
+## Ubuntu
+On Ubuntu 18.04 and above:
+
+    Sudo apt install neovim
+
+## Universal (for any other linux distros)
+
 <ul>
-<li> (optional) Remove the current version of NeoVim </li>
+<li> (if true) Remove the current version of NeoVim </li>
 
         sudo apt-remove neovim
 
@@ -118,6 +125,9 @@ Download the latest .deb package from the [release page](https://github.com/Pelt
 
 <li> To update, download the latest `nvim.appimage` and `mv` it to `/nvim`</li>
 </ul>
+
+## Configure Neovim
+    (to be added)
 
 # Extras
 
