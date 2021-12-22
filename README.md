@@ -75,9 +75,13 @@ For best features please consider using:
 
 ## <li>Install [ lsd ](https://github.com/Peltoche/lsd)</li>
 
-Download the latest .deb package from the [release page](https://github.com/Peltoche/lsd/releases) and install it via:
+Download the latest .deb package from the [release page](https://github.com/Peltoche/lsd/releases) or via CLI:
 
-    sudo dpkg -i lsd_0.20.1_amd64.deb # adapt version number and architecture
+    curl -LO https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb   
+
+And install it (adapt version number and architecture) via:
+
+    sudo dpkg -i lsd_0.20.1_amd64.deb 
 
 ## <li>Install [ Zoxide ](https://github.com/ajeetdsouza/zoxide) (optional)</li>
 
@@ -101,9 +105,9 @@ On Ubuntu 18.04 and above:
 
         sudo apt-remove neovim
 
-<li> Download the latest `nvim.appimage` from GitHub:</li>
+<li> Download the latest `nvim.appimage` from [ GitHub repo ](https://github.com/neovim/neovim):</li>
 
-        https://github.com/neovim/neovim   
+        curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 
 <li> Make it executable for your user</li>
         
@@ -116,6 +120,11 @@ On Ubuntu 18.04 and above:
 <li> To move it there you'll need to use sudo: </li>
 
         sudo mv nvim.appimage /usr/local/bin/nvim
+        
+Alternatively:
+
+        mv ./nvim.appimage ~/.local/bin
+        echo "alias vim='~/.local/bin/nvim.appimage'" >> ~/.zshrc
 
 <li> When you type `nvim` it should work</li>
 

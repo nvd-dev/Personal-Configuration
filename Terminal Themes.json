@@ -49,19 +49,19 @@
             "black": "#ddc49a", 
             "brightBlack": "#808076", 
             "blue": "#314f6f", 
-            "brightBlue": "#1f3855", 
-            "cyan": "#058b8c", 
-            "brightCyan": "#0f4c64", 
-            "green": "#61993b", 
-            "brightGreen": "#3c7460",  
-            "purple": "#651e38", 
-            "brightPurple": "#8d3c4b", 
-            "red": "#ab273c", 
-            "brightRed": "#c73f4a", 
-            "white": "#f1ece1", 
-            "brightWhite": "#ecece7", 
-            "yellow": "#da6e00", 
-            "brightYellow": "#ffb200"
+            "brightBlue": "#376b8c", 
+            "cyan": "#0f4c64", 
+            "brightCyan": "#058b8c", 
+            "green": "#61993b",  //6010
+            "brightGreen": "#00b52a", //6038
+            "purple": "#651e38", //4004 
+            "brightPurple": "#8d3c4b", //4002
+            "red": "#ab273c", //3027
+            "brightRed": "#bb1e10", //3020
+            "white": "#f1ece1", //9010
+            "brightWhite": "#ecece7", //9003
+            "yellow": "#908370", //1035
+            "brightYellow": "#e6d2b5" //1015
         },
         {
             "name": "Olivia++",

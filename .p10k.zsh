@@ -36,7 +36,7 @@
   local blue='4'
   local magenta='5'
   local cyan='6'
-  local white='7'
+  local white='255'
   local grey='8'
 
   # The list of segments shown on the left. Fill it with the most important segments.
@@ -164,7 +164,7 @@
   # POWERLEVEL9K_MULTILINE_FIRST_PROMPT_GAP_CHAR=' ' below.
   typeset -g POWERLEVEL9K_SHOW_RULER=false
   typeset -g POWERLEVEL9K_RULER_CHAR='─'        # reasonable alternative: '·'
-  typeset -g POWERLEVEL9K_RULER_FOREGROUND=242
+  typeset -g POWERLEVEL9K_RULER_FOREGROUND=$black
 
   # Filler between left and right prompt on the first prompt line. You can set it to '·' or '─'
   # to make it easier to see the alignment between left and right prompt and to separate prompt

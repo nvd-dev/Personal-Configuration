@@ -128,7 +128,12 @@ source $ZSH/oh-my-zsh.sh
 	# Promt Extras
 	alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
 	alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
-	
+
+	# Neovim
+	alias nv='~/.local/bin/nvim.appimage'
+	alias vi='~/.local/bin/nvim.appimage'
+	alias vim='~/.local/bin/nvim.appimage'
+
 #setting
 
 # #zsh-nvm
