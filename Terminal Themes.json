@@ -44,14 +44,14 @@
         },
         {
             "name": "matrix-01",
-            "foreground": "#ddc49a", 
-            "background": "#191e28", 
-            "black": "#ddc49a", 
-            "brightBlack": "#808076", 
-            "blue": "#314f6f", 
-            "brightBlue": "#376b8c", 
-            "cyan": "#0f4c64", 
-            "brightCyan": "#058b8c", 
+            "foreground": "#ddc49a", //1014
+            "background": "#191e28", //5004
+            "black": "#ddc49a", //1014
+            "brightBlack": "#808076", //7023
+            "blue": "#314f6f", //5000
+            "brightBlue": "#376b8c", //5007
+            "cyan": "#0f4c64", //5001
+            "brightCyan": "#058b8c", //5018
             "green": "#61993b",  //6010
             "brightGreen": "#00b52a", //6038
             "purple": "#651e38", //4004 

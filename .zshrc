@@ -77,12 +77,19 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+# plugins settings
+# zsh-nvm
+export nvm_lazy_load=true
+export nvm_completion=true
+
 plugins=(
     git
     zsh-autosuggestions
     zsh-syntax-highlighting
     zsh-z
     vscode
+    zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -114,38 +121,37 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # alias
+        # lsd
+        alias ls='lsd'
+        alias l='ls -l'
+        alias la='ls -a'
+        alias lla='ls -la'
+        alias lt='ls --tree'
 
-	#lsd
-	alias ls='lsd'
-	alias l='ls -l'
-	alias la='ls -a'
-	alias lla='ls -la'
-	alias lt='ls --tree'
+        # Explorer
+        alias open='explorer.exe'
 
-	# Explorer
-	alias open='explorer.exe'
-	
-	# Promt Extras
-	alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
-	alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
+        # Promt Extras
+        alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
+        alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 
-	# Neovim
-	alias nv='~/.local/bin/nvim.appimage'
-	alias vi='~/.local/bin/nvim.appimage'
-	alias vim='~/.local/bin/nvim.appimage'
+        # Neovim
+        alias nv='nvim'
+        alias vi='nvim'
+        alias vim='nvim'
 
-#setting
+        # Python3
+        alias p3='python3'
+        alias py='python3'
 
-# #zsh-nvm
-# export nvm_lazy_load=true
-# export nvm_completion=true
+# settings
 
-# zsh-z
-	ZSHZ_DATA=~/.cache/.z
-	
-#other settings
-	# DISABLE_UPDATE_PROMPT='false'
-	# DISABLE_AUTO_TITLE='true'
+        # zsh-z
+        ZSHZ_DATA=~/.cache/.z
+                
+        # other settings
+        # DISABLE_UPDATE_PROMPT='false'
+        # DISABLE_AUTO_TITLE='true'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

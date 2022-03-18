@@ -103,15 +103,15 @@ On Ubuntu 18.04 and above:
 <ul>
 <li> (if true) Remove the current version of NeoVim </li>
 
-        sudo apt-remove neovim
+    sudo apt-remove neovim
 
 <li> Download the latest `nvim.appimage` from [ GitHub repo ](https://github.com/neovim/neovim):</li>
 
-        curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+    curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 
 <li> Make it executable for your user</li>
         
-        chmod u+x ./nvim.appimage
+    chmod u+x ./nvim.appimage
 
 <li> Move it to a folder that's indexed in your PATH env var so your computer knows what you mean when you type `nvim`.</li>
 
@@ -119,18 +119,17 @@ On Ubuntu 18.04 and above:
 
 <li> To move it there you'll need to use sudo: </li>
 
-        sudo mv nvim.appimage /usr/local/bin/nvim
+    sudo mv nvim.appimage /usr/local/bin/nvim
+
+<li> When you type `nvim` it should work, bonus:</li>
+
+- Add this to ~/.zshrc etc to create an alias in case you accidentally type vi (I always type it by mistake): 
+    
+        alias vi=nvim
+
+- Also in your bashrc/zshrc etc set your EDITOR env var so various programs know what editor you prefer to use: 
         
-Alternatively:
-
-        mv ./nvim.appimage ~/.local/bin
-        echo "alias vim='~/.local/bin/nvim.appimage'" >> ~/.zshrc
-
-<li> When you type `nvim` it should work</li>
-
-    - Bonus: add this to ~/.zshrc etc to create an alias in case you accidentally type vi (I always type it by mistake): alias vi=nvim
-
-    - Bonus: Also in your bashrc/zshrc etc set your EDITOR env var so various programs know what editor you prefer to use: EDITOR=/usr/local/bin/nvim
+        EDITOR=/usr/local/bin/nvim
 
 <li> To update, download the latest `nvim.appimage` and `mv` it to `/nvim`</li>
 </ul>
@@ -154,19 +153,19 @@ e.g This set Matrix-01 theme to Vscode terminal:
             "terminal.ansiBlack": "#ddc49a",
             "terminal.ansiBrightBlack": "#808076",
             "terminal.ansiBlue": "#314f6f",
-            "terminal.ansiBrightBlue": "#1f3855",
-            "terminal.ansiCyan": "#058b8c",
-            "terminal.ansiBrightCyan": "#0f4c64",
+            "terminal.ansiBrightBlue": "#376b8c",
+            "terminal.ansiCyan": "#0f4c64",
+            "terminal.ansiBrightCyan": "#058b8c",
             "terminal.ansiGreen": "#61993b",
-            "terminal.ansiBrightGreen": "#3c7460",
+            "terminal.ansiBrightGreen": "#00b52a",
             "terminal.ansiMagenta": "#651e38",
             "terminal.ansiBrightMagenta": "#8d3c4b",
             "terminal.ansiRed": "#ab273c",
-            "terminal.ansiBrightRed": "#c73f4a",
+            "terminal.ansiBrightRed": "#bb1e10",
             "terminal.ansiWhite": "#f1ece1",
             "terminal.ansiBrightWhite": "#ecece7",
-            "terminal.ansiYellow": "#da6e00",
-            "terminal.ansiBrightYellow": "#ffb200"
+            "terminal.ansiYellow": "#908370",
+            "terminal.ansiBrightYellow": "#e6d2b5"
     }
 </details>
 
