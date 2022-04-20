@@ -77,11 +77,11 @@ For best features please consider using:
 
 Download the latest .deb package from the [release page](https://github.com/Peltoche/lsd/releases) or via CLI:
 
-    curl -LO https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb   
+    curl -LO https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb
 
 And install it (adapt version number and architecture) via:
 
-    sudo dpkg -i lsd_0.20.1_amd64.deb 
+    sudo dpkg -i lsd_0.21.0_amd64.deb 
 
 ## <li>Install [ Zoxide ](https://github.com/ajeetdsouza/zoxide) (optional)</li>
 

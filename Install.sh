@@ -12,8 +12,8 @@
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 ## lsd
-    curl -LO https://github.com/Peltoche/lsd/releases/download/0.20.1/lsd_0.20.1_amd64.deb   
-    sudo dpkg -i ./lsd/lsd_0.20.1_amd64.deb
+    curl -LO https://github.com/Peltoche/lsd/releases/download/0.21.0/lsd_0.21.0_amd64.deb   
+    sudo dpkg -i ./lsd/lsd_0.21.0_amd64.deb
 
 # Hard link main config files
     ln -f .p10k.zsh ~/.p10k.zsh

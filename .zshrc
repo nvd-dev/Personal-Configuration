@@ -79,9 +79,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Add wisely, as too many plugins slow down shell startup.
 
 # plugins settings
+
 # zsh-nvm
-export nvm_lazy_load=true
-export nvm_completion=true
+# export nvm_lazy_load=true
+# export nvm_completion=true
 
 plugins=(
     git
@@ -89,7 +90,7 @@ plugins=(
     zsh-syntax-highlighting
     zsh-z
     vscode
-    zsh-nvm
+#     zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
