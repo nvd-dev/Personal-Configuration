@@ -86,10 +86,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
     git
+    vscode
+    zoxide
     zsh-autosuggestions
     zsh-syntax-highlighting
-    zsh-z
-    vscode
+    python
+#     zsh-z
 #     zsh-nvm
 )
 
@@ -137,13 +139,9 @@ source $ZSH/oh-my-zsh.sh
         alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
 
         # Neovim
-        alias nv='nvim'
-        alias vi='nvim'
-        alias vim='nvim'
-
-        # Python3
-        alias p3='python3'
-        alias py='python3'
+        # alias nv='nvim'
+        # alias vi='nvim'
+        # alias vim='nvim'
 
 # settings
 
