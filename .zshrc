@@ -77,22 +77,15 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-
-# plugins settings
-
-# zsh-nvm
-# export nvm_lazy_load=true
-# export nvm_completion=true
-
 plugins=(
     git
     vscode
     zoxide
+    python
+    brew
+    vi-mode
     zsh-autosuggestions
     zsh-syntax-highlighting
-    python
-#     zsh-z
-#     zsh-nvm
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -125,32 +118,20 @@ source $ZSH/oh-my-zsh.sh
 
 # alias
         # lsd
-        alias ls='lsd'
+        alias ls='exa'
         alias l='ls -l'
         alias la='ls -a'
         alias lla='ls -la'
         alias lt='ls --tree'
 
-        # Explorer
-        alias open='explorer.exe'
+	# neovim
+        alias vi='nvim'
 
-        # Promt Extras
-        alias bench='for i in $(seq 1 5); do /usr/bin/time $SHELL -i -c exit; done'
-        alias colors='for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done'
+    # python
+        alias python='python3'
 
-        # Neovim
-        # alias nv='nvim'
-        # alias vi='nvim'
-        # alias vim='nvim'
-
-# settings
-
-        # zsh-z
-        ZSHZ_DATA=~/.cache/.z
-                
-        # other settings
-        # DISABLE_UPDATE_PROMPT='false'
-        # DISABLE_AUTO_TITLE='true'
+    # cpp
+        alias c='clang++ -ggdb -pedantic-errors -Wall -Weffc++ -Wextra -Wsign-conversion -std=c++20'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
