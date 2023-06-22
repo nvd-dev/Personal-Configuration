@@ -1,0 +1,33 @@
+[colors]
+ansi = [
+    '#ddc49a', #black
+    '#ab273c', #maroon
+    '#61993b', #green
+    '#908370', #olive
+    '#314f6f', #navy
+    '#651e38', #purple
+    '#0f4c64', #teal
+    '#f1ece1', #silver
+]
+background = '#191e28'
+brights = [
+    '#808076', #grey
+    '#bb1e10', #red
+    '#00b52a', #lime
+    '#e6d2b5', #yellow
+    '#376b8c', #blue
+    '#8d3c4b', #fuchia
+    '#058b8c', #aqua
+    '#ecece7', #white
+]
+foreground = '#ddc49a'
+cursor_bg = '#e6d2b5'
+cursor_border = '#e6d2b5'
+cursor_fg = '#191e28'
+selection_bg = '#b5d5ff'
+selection_fg = '#000000'
+
+[colors.indexed]
+
+[metadata]
+name = 'Matrix-01'
